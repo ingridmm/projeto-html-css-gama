@@ -1,0 +1,22 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+        
+h1{
+    text-align: center;
+}   
+
+#login{
+    background-color: rgb(187, 127, 255);
+    color: white;
+}
+
+#inscreva{
+    background-color: cornflowerblue;
+}
+
+.copy{
+    font-size: 8px;
+    color: blue;
+}
