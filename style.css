@@ -1,22 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2e3235;
+    font-family: 'Roboto Condensed', sans-serif;    
+    /*box-sizing: border-box; se tiver uma bopx com uma width e height 
+    sua altura e largura de fato sejam apenas as estabelecidas, sem padding e margin, ao somar medidas tenha mais facilidade ao somar */
+}
+
+ul{
+    list-style: none;
+    /*font-size: 30px;*/
+    font-style: italic;
+    /*font-weight: 600;*/
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/home/ingridmoreira/Documentos/projeto-html-css-gama/pexels-gdtography-950241.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    /*INSERIR GRADIENTE: background: linear-gradient(to right bottom, #dee6f2, #c4c8d2, #aaacb2, #909093, #767676);
+    height: 100vh;*/
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px white;
+    /*border-bottom: 1px solid red; 
+    border-bottom: 15px ridge #fff -> cria uma opacidade na separação*/
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+    /*border-bottom: 2px dashed black*/
+}
+
+header ul li a{
+    transition: 400ms;
+}
+
+header ul li a:hover{
+    color:#61676b;
+    text-decoration: underline;
+}
+
+.container{
     text-align: center;
 }
-        
-h1{
-    text-align: center;
-}   
 
-#login{
-    background-color: rgb(187, 127, 255);
-    color: white;
+.container .name h1{
+    font-size: 60px;
 }
 
-#inscreva{
-    background-color: cornflowerblue;
+.container .name h5{
+    font-size: 25px;
 }
 
-.copy{
-    font-size: 8px;
-    color: blue;
+#arrow{
+    font-size: 30px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
 }
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    /*border: thick double black;*/
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: black;
+    color: #61676b;
+    border: none;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.form button:hover{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #2e3235;
+    color: #61676b;
+    border: none;
+    cursor: pointer;
+}
+
+#logo{
+    width: 190px;
+}
+

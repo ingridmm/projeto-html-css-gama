@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gama Academy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <title>Ingrid M Miranda</title>
 </head>
 
 <body>
-     <h1>Gama Academy</h1>
+    <header>
+        
+        <div>
+            <img id="logo" src="/home/ingridmoreira/Documentos/projeto-html-css-gama/processed_d0922759-a5cb-48bd-82b0-2c2749210fd0_610c666b0de09.png" alt="logo do site IMM">
+        </div>
+    
+        <ul>
+            <li><a target="blank" href="https://www.github.com/ingridmm">Github</a></li>
+            <li><a target="blank" href="https://www.linkedin.com/in/ingridmm/">LinkedIn</a></li>
+            <li><a target="blank" href="mailto:ingridmoreiramiranda@gmail.com">E-Mail</a></li>
+        </ul>
+    </header>
 
-    <div>
-        <button id='login'>Login</button>
-        <button id='inscreva'>Inscreva-se</button>
-    </div>
-     
-    <div class="copy">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit? Enim incidunt ipsam vero neque libero ut, dolor magnam aspernatur natus ipsum at, molestiae ratione minus eius fugit nisi repellendus!</p>
-    </div>
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>Ingrid M Miranda</h1>
+                <h5>Estudante de Desenvolvimento</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-angle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tenetur molestiae explicabo ut odit provident. Facilis enim architecto molestias dicta omnis tenetur quia beatae assumenda mollitia, minus est ipsa natus.</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="seu e-mail">
+                    <button>enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script type="text/javascript" src="/home/ingridmoreira/Documentos/projeto-html-css-gama/script.js"> </script>
 
 </body>
 </html>
